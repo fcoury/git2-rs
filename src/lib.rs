@@ -685,6 +685,7 @@ mod panic;
 mod attr;
 mod call;
 mod util;
+mod ext;
 
 pub mod build;
 pub mod cert;
@@ -692,6 +693,8 @@ pub mod oid_array;
 pub mod opts;
 pub mod string_array;
 pub mod transport;
+
+pub use ext::{repository_raw, repository_odb_raw, odb_raw};
 
 mod apply;
 mod blame;
